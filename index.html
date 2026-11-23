@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>mops - GitOps for marketing</title>
+    <meta name="description" content="Your campaigns, budgets and ads, with their copy and images, written down as config files your team reviews like code." />
+    <link rel="canonical" href="https://mops.run/" />
+    <meta property="og:title" content="mops - GitOps for marketing" />
+    <meta property="og:description" content="Your campaigns, budgets and ads, with their copy and images, written down as config files your team reviews like code." />
+    <meta property="og:image" content="https://mops.run/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="mops logo with the text GitOps for marketing" />
+    <meta property="og:url" content="https://mops.run/" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" />
+    <link rel="stylesheet" href="site.css" />
+    <script type="application/ld+json">
+      {"@context": "https://schema.org", "@type": "Organization", "name": "mops", "url": "https://mops.run/", "email": "run@mops.run", "logo": "https://mops.run/logo.svg"}
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="brand" href="/" aria-label="mops home"><img src="logo.svg" alt="" width="22" height="27" /><span>mops<span class="accent">_</span></span></a>
+        <nav aria-label="Main"><a href="#tell-me-more">Tell me more</a></nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero" aria-labelledby="hero-heading">
+        <div class="wrap split">
+          <div class="stack">
+            <div aria-hidden="true">
+              <p class="comment"># marketing as code</p>
+              <p class="comment"># run by you and your agents</p>
+            </div>
+            <h1 id="hero-heading">GitOps for marketing<span class="accent">_</span></h1>
+            <p class="lead">Your campaigns, budgets and ads, with their copy and images, written down as config files your team reviews like code. Every change is proposed, discussed and approved before it reaches an ad platform, and the history of your config files is the history of your accounts.</p>
+            <p class="actions">
+              <a class="button primary" href="#tell-me-more">Tell me more</a>
+            </p>
+          </div>
+
+          <figure class="window" aria-label="Example proposal">
+            <div class="window-bar"><span class="lights" aria-hidden="true"><span></span><span></span><span></span></span><span class="window-title">Agency / proposal #2</span></div>
+            <div class="preview-head">
+              <p class="preview-heading"><span class="preview-title">#2 Spring launch EMEA</span> <span class="badge ok">Open</span></p>
+              <p class="preview-line">Ana Lopez wants to change linkedin-ads-1 · v2 by mops agent</p>
+            </div>
+            <div class="diff">
+              <p class="diff-file">linkedin-ads-1/assets/spring-launch-copy.yaml</p>
+              <div class="diff-line"><span class="ln">1</span><span class="sign"></span><code>kind: text</code></div>
+              <div class="diff-line"><span class="ln">2</span><span class="sign"></span><code>recipe:</code></div>
+              <div class="diff-line removed"><span class="ln">3</span><span class="sign">-</span><code>  prompt: Spring launch of our analytics product</code></div>
+              <div class="diff-line added"><span class="ln">3</span><span class="sign">+</span><code>  prompt: Spring launch of our analytics product, for finance teams</code></div>
+              <div class="diff-line"><span class="ln">4</span><span class="sign"></span><code>  ai: default</code></div>
+            </div>
+            <div class="notes">
+              <div class="note">
+                <span class="avatar" aria-hidden="true">AL</span>
+                <div>
+                  <p class="note-meta"><strong>Ana Lopez</strong> on line 3 · v1</p>
+                  <p class="note-body">Write it for finance teams.</p>
+                </div>
+              </div>
+              <div class="note reply">
+                <span class="avatar agent" aria-hidden="true">m</span>
+                <div>
+                  <p class="note-meta"><strong>mops agent</strong> <span class="tag">AI</span> · v2</p>
+                  <p class="note-body">Added to the prompt; 1 new candidate in v2.</p>
+                </div>
+              </div>
+            </div>
+            <div class="preview-foot">
+              <ul class="preview-checks">
+                <li><svg class="icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" /></svg>Checks passed</li>
+                <li><svg class="icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" /></svg>Approved by Ana Lopez</li>
+              </ul>
+              <span class="label">Merge</span>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section id="how" aria-labelledby="how-heading">
+        <div class="wrap stack-lg">
+          <div class="intro">
+            <p class="comment" aria-hidden="true"># how it works</p>
+            <h2 id="how-heading">How it works</h2>
+            <p class="sub">The same loop software teams use for infrastructure, applied to your ad accounts.</p>
+          </div>
+          <ol class="cards">
+            <li class="card">
+              <span class="step-no">01</span>
+              <h3>Draft</h3>
+              <p>Write down the state you want: the campaigns, their budgets, targeting and creatives.</p>
+              <code>campaign.yaml</code>
+            </li>
+            <li class="card">
+              <span class="step-no">02</span>
+              <h3>Change</h3>
+              <p>A change arrives as a proposal, from a person or from the agency, showing exactly what would change.</p>
+              <code>- daily_budget: 80  + daily_budget: 50</code>
+            </li>
+            <li class="card">
+              <span class="step-no">03</span>
+              <h3>Review</h3>
+              <p>Your team comments, asks for changes and approves, with every check visible.</p>
+              <code>approved · checks passed</code>
+            </li>
+            <li class="card">
+              <span class="step-no">04</span>
+              <h3>Apply</h3>
+              <p>Once approved, mops brings the ad platforms in line with the config files.</p>
+              <code>mops ads apply</code>
+            </li>
+          </ol>
+          <p class="loop">edit / draft <span class="arrow">→</span> review / checks <span class="arrow">→</span> merge / apply <span class="arrow">→</span> analyse reports <span class="arrow">→</span> next draft</p>
+        </div>
+      </section>
+
+      <section id="manages" aria-labelledby="manages-heading">
+        <div class="wrap stack-lg">
+          <div class="intro">
+            <p class="comment" aria-hidden="true"># what mops manages</p>
+            <h2 id="manages-heading">Five parts of an ad account</h2>
+          </div>
+          <ul class="cards parts">
+            <li class="card">
+              <div class="part-top"><span class="dot campaigns"></span><span class="badge ok">LinkedIn</span></div>
+              <h3>Accounts</h3>
+              <p>LinkedIn Ads, linked in the agency&#39;s setup.</p>
+            </li>
+            <li class="card">
+              <div class="part-top"><span class="dot campaigns"></span><span class="badge ok">LinkedIn Ads</span></div>
+              <h3>Campaigns</h3>
+              <p>Campaign groups, campaigns and their single-image, text and promoted-post ads, with targeting and budgets, compared with what is live.</p>
+            </li>
+            <li class="card">
+              <div class="part-top"><span class="dot audiences"></span><span class="badge planned">Planned</span></div>
+              <h3>Audiences</h3>
+              <p>Who you reach, described once and used across campaigns.</p>
+            </li>
+            <li class="card">
+              <div class="part-top"><span class="dot assets"></span><span class="badge ok">Images and copy</span></div>
+              <h3>Assets</h3>
+              <p>Copy and images, generated or added by hand, versioned with the campaigns that use them.</p>
+            </li>
+            <li class="card">
+              <div class="part-top"><span class="dot reports"></span><span class="badge ok">In the agency</span></div>
+              <h3>Reports</h3>
+              <p>Daily spend, impressions, clicks and conversions, read live from LinkedIn for the agency&#39;s dashboard.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="agents" aria-labelledby="agents-heading">
+        <div class="wrap split">
+          <div class="stack">
+            <p class="comment" aria-hidden="true"># agents</p>
+            <h2 id="agents-heading">AI proposes, people approve</h2>
+            <p class="lead">mops builds the campaign from your brief, and AI writes its copy and banner. When a reviewer comments on the copy or the banner, AI rewrites its prompt and adds a version with new candidates. It never approves, merges or changes an account on its own.</p>
+            <ul class="roles">
+              <li><span class="role ai">AI</span> <span>writes the copy and banner of a campaign drafted from a brief</span></li>
+              <li><span class="role ai">AI</span> <span>rewrites the copy or banner prompt from each review comment on it</span></li>
+              <li><span class="role you">you</span> <span>choose candidates, resolve comments, approve and merge</span></li>
+            </ul>
+          </div>
+          <figure class="panel checklist" aria-label="Example merge checklist">
+            <p class="checklist-title">Merge</p>
+            <ul>
+              <li class="ok"><svg class="icon" width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" /></svg>Checks passed on v2</li>
+              <li class="ok"><svg class="icon" width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" /></svg>Approved by a person: Ana Lopez</li>
+              <li class="ok"><svg class="icon" width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" /></svg>No review requests changes</li>
+              <li class="no"><svg class="icon" width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" /></svg>mops agent cannot approve or merge</li>
+            </ul>
+            <div class="checklist-foot"><span class="checklist-status">Ready to merge</span><span class="label">Merge</span></div>
+          </figure>
+        </div>
+      </section>
+
+      <section id="dashboard" aria-labelledby="dashboard-heading">
+        <div class="wrap split">
+          <div class="stack">
+            <p class="comment" aria-hidden="true"># dashboard</p>
+            <h2 id="dashboard-heading">See what each change did</h2>
+            <p class="lead">The agency plots daily spend, impressions, clicks, conversions and CPC for each account, campaign group and campaign, with a marker for every merged proposal. Under the plot are the active campaigns, the open proposals and the history of what each merge changed.</p>
+          </div>
+          <figure class="window board" aria-label="Example dashboard">
+            <div class="window-bar"><span class="lights" aria-hidden="true"><span></span><span></span><span></span></span><span class="window-title">Agency / ana@example.com</span></div>
+            <div class="board-body">
+              <p class="board-crumbs">All channels / linkedin-ads-1</p>
+              <p class="board-selects"><span>Left: Spend</span><span>Period: Last 30 days</span><span>Right: CPC</span></p>
+              <div class="board-plot">
+                <svg viewBox="0 0 300 120" preserveAspectRatio="none" role="img" aria-label="Daily spend and CPC of the last 30 days, with markers for proposals 1 and 2">
+                  <line class="marker" vector-effect="non-scaling-stroke" x1="110" y1="8" x2="110" y2="112" />
+                  <line class="marker" vector-effect="non-scaling-stroke" x1="230" y1="8" x2="230" y2="112" />
+                  <polyline class="series one" vector-effect="non-scaling-stroke" points="0,82 20,80 40,78 60,79 80,74 100,72 120,60 140,58 160,56 180,57 200,55 220,54 240,46 260,44 280,45 300,43" />
+                  <polyline class="series two" vector-effect="non-scaling-stroke" points="0,98 20,97 40,96 60,97 80,95 100,96 120,94 140,95 160,93 180,94 200,92 220,93 240,91 260,92 280,90 300,91" />
+                  <polyline class="series one dashed" vector-effect="non-scaling-stroke" points="0,40 30,42 60,38 90,41 120,48 150,50 180,47 210,49 240,56 270,55 300,57" />
+                  <polyline class="series two dashed" vector-effect="non-scaling-stroke" points="0,22 30,24 60,21 90,23 120,22 150,25 180,23 210,24 240,22 270,23 300,21" />
+                </svg>
+                <span class="marker-label one">#1</span>
+                <span class="marker-label two">#2</span>
+              </div>
+              <ul class="board-legend"><li><span class="swatch one" aria-hidden="true"></span>Spring launch (USD)</li><li><span class="swatch two" aria-hidden="true"></span>Brand awareness Q4 (USD)</li></ul>
+              <div class="board-lists">
+                <div class="board-active">
+                  <p class="board-heading">Active in linkedin-ads-1</p>
+                  <ul>
+                    <li><span>Spring launch DE</span><span class="faint">75 USD daily budget</span></li>
+                    <li><span>Brand awareness Q4 DACH</span><span class="faint">50 USD daily budget</span></li>
+                  </ul>
+                </div>
+                <div class="board-history">
+                  <p class="board-heading">History</p>
+                  <ul>
+                    <li><span class="pill">#2 Spring launch EMEA</span><span class="faint">Spring launch DE: new headline and introductory text</span><span class="kind">Creative</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section id="history" aria-labelledby="history-heading">
+        <div class="wrap split">
+          <div class="stack">
+            <p class="comment" aria-hidden="true"># history</p>
+            <h2 id="history-heading">Your account history is your Git history</h2>
+            <p class="lead">Every change is a reviewed commit with its reasons attached. To undo a change, revert it: the next apply brings the platforms back in line.</p>
+          </div>
+          <figure class="window" aria-label="Example Git history">
+            <div class="window-bar"><span class="lights" aria-hidden="true"><span></span><span></span><span></span></span><span class="window-title">production</span></div>
+            <pre class="terminal"><span class="faint">$</span> git log --oneline
+<span class="hash">a1b9c3e</span> Merge proposal #2 Spring launch EMEA
+<span class="hash">7f20d11</span> v2 revise: write the copy for finance teams
+<span class="hash">0c4e8a2</span> v1 draft: Spring launch EMEA
+<span class="hash">5d1f7b9</span> Merge proposal #1 Brand awareness Q4
+
+<span class="faint">$</span> git revert a1b9c3e
+<span class="faint"># the next apply brings LinkedIn back in line</span></pre>
+          </figure>
+        </div>
+      </section>
+
+      <section id="cli" aria-labelledby="cli-heading">
+        <div class="wrap split">
+          <div class="stack">
+            <p class="comment" aria-hidden="true"># cli</p>
+            <h2 id="cli-heading">The same workflow from the command line</h2>
+            <p class="lead">Developers will run the same workflow with the mops CLI and library: pull an account into config files, draft from a brief, plan and apply. The CLI is not released yet.</p>
+          </div>
+          <figure class="window" aria-label="Example CLI session">
+            <div class="window-bar"><span class="lights" aria-hidden="true"><span></span><span></span><span></span></span><span class="window-title">production</span></div>
+            <pre class="terminal"><span class="faint">&gt;</span> mops ads pull
+<span class="faint">&gt;</span> mops ads draft linkedin-ads-1 --brief brief.yaml
+<span class="faint">&gt;</span> mops assets generate
+<span class="faint">&gt;</span> mops ads plan
+<span class="faint">&gt;</span> mops ads apply</pre>
+          </figure>
+        </div>
+      </section>
+
+      <section id="tell-me-more" class="cta" aria-labelledby="cta-heading">
+        <div class="wrap stack">
+          <h2 id="cta-heading">Hear when the agency opens</h2>
+          <p class="sub">mops is in private preview. Email us to hear when you can try it.</p>
+          <a class="button primary" href="mailto:run@mops.run?subject=Tell%20me%20more">Tell me more</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap bar">
+        <span class="footer-brand"><img src="logo.svg" alt="" width="16" height="20" />© mops</span>
+        <a href="mailto:run@mops.run">run@mops.run</a>
+      </div>
+    </footer>
+  </body>
+</html>
