@@ -274,8 +274,14 @@
       <section id="tell-me-more" class="cta" aria-labelledby="cta-heading">
         <div class="wrap stack">
           <h2 id="cta-heading">Hear when the agency opens</h2>
-          <p class="sub">mops is in private preview. Email us to hear when you can try it.</p>
-          <a class="button primary" href="mailto:run@mops.run?subject=Tell%20me%20more">Tell me more</a>
+          <p class="sub">mops is in private preview. Leave your email and we write to you about what it does and when you can try it.</p>
+          <form class="signup" method="post" action="https://eu.customerioforms.com/forms/submit_action?site_id=4153de1a5bd8facf9814&amp;form_id=tell-me-more&amp;success_url=https%3A%2F%2Fmops.run%2F%23thanks" aria-labelledby="cta-heading">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required autocomplete="email" placeholder="you@company.com" aria-describedby="consent" />
+            <button class="button primary" type="submit">Tell me more</button>
+          </form>
+          <p id="thanks" class="thanks" role="status">Thanks. We sent you an email from run@mops.run; reply to it to tell us what you need.</p>
+          <p id="consent" class="sub">We write to you about mops; unsubscribe at any time.</p>
         </div>
       </section>
     </main>
