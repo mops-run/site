@@ -21,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" />
     <link rel="stylesheet" href="site.css" />
+    <script src="site.js" defer></script>
     <script type="application/ld+json">
       {"@context": "https://schema.org", "@type": "Organization", "name": "mops", "url": "https://mops.run/", "email": "run@mops.run", "logo": "https://mops.run/logo.svg"}
     </script>
@@ -292,5 +293,15 @@
         <a href="mailto:run@mops.run">run@mops.run</a>
       </div>
     </footer>
+
+    <section id="consent-banner" class="consent" aria-label="Consent" hidden>
+      <div class="wrap bar">
+        <p>May we record your visit to see which links bring people to mops?</p>
+        <div class="actions">
+          <button class="button secondary" type="button" value="no">No</button>
+          <button class="button primary" type="button" value="yes">Yes</button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

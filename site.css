@@ -315,3 +315,15 @@ button.button { border: 0; cursor: pointer; }
   .cards.parts { grid-template-columns: minmax(0, 1fr); }
   h1 { font-size: var(--font-size-38); }
 }
+
+/* The consent banner (README, Consent banner): fixed at the bottom of the window, over the page, until a choice. */
+.button.secondary { border: var(--size-border-width) solid var(--color-border-input); background: var(--color-bg-raised); color: var(--color-text-default); }
+.consent {
+  position: fixed;
+  inset: auto 0 0 0;
+  border-top: var(--size-border-width) solid var(--color-border-default);
+  background: var(--color-bg-raised);
+}
+.consent[hidden] { display: none; }
+.consent .bar { padding: var(--size-space-16) var(--size-gutter); }
+.consent p { margin: 0; }
