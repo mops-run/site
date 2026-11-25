@@ -232,8 +232,6 @@ button.button { border: 0; cursor: pointer; }
   color: var(--color-text-link);
   font: var(--typography-label);
 }
-.loop { color: var(--color-text-faint); font: var(--font-weight-regular) var(--font-size-14) var(--font-family-mono); text-align: center; }
-.arrow { color: var(--color-text-link); }
 .part-top { display: flex; align-items: center; justify-content: space-between; gap: var(--size-space-8); }
 .dot { width: 14px; height: 14px; border-radius: var(--size-radius-pill); }
 .dot.channels { background: var(--color-text-ok); }
